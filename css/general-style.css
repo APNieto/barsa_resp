@@ -129,7 +129,7 @@ footer {
 .options #button2 {       
     text-shadow: 1px 1px 2px rgb(0, 165, 177);
     animation-name: button2;
-    animation-delay: 2.7s;
+    animation-delay: 2.74s;
     animation-duration: 9s;
     animation-iteration-count: infinite;
     animation-direction: normal;    
@@ -139,4 +139,57 @@ footer {
 @keyframes button2 {
     from {background-position: var(--animation-x-start) 15px; text-shadow: 1px 1px 2px rgb(0, 165, 177);}    
     to {background-position: var(--animation-x-end) 15px; text-shadow: 1px 1px 2px rgb(33, 182, 90)}    
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 420px) {
+
+    body {
+        height: 100vh;
+    }   
+
+    header {
+        box-sizing: border-box;
+        height: 8%;
+    }
+
+    main {
+        height: 80%;
+    }
+
+    footer {
+        height: 12%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    figure {
+        box-sizing: border-box;
+        width: 100%;   
+        padding: 35px;     
+    }
+
+    figure > img {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .options {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #button1, #button2 {
+        width: 100%;
+    }
+
 }
